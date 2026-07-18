@@ -12,15 +12,15 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
     <h1 class="mb-3"><? $APPLICATION->ShowTitle() ?></h1>
 
     <h4 class="mb-3">Пояснительная записка</h4>
-    <div style="color: red;font-style: italic;">
-        Тут добавить описание того что и как было реализовано.
-    </div>
+	<div style="color: #334155; font-size: 14px; line-height: 1.6; padding: 15px; background: #f8fafc; border-left: 4px solid #16a34a; border-radius: 4px;">
+		<strong>Реализация ДЗ №2:</strong><br>
+		1. Кастомное логирование вынесено в изолированный класс <code>Logger</code>, наследующий базовый функционал ядра проекта.<br>
+		2. Все кастомные сообщения автоматически тегируются обязательным префиксом <strong>[OTUS]</strong>.<br>
+		3. Системные исключения перехватываются штатным обработчиком Битрикса через <code>.settings_extra.php</code> и логируются с меткой <strong>[OTUS EXCEPTION]</strong>.
+	</div>
     <br>
     <br>
     <hr>
-    <div style="color: red;font-style: italic;">
-        &darr;&darr;&darr; ссылки ниже заменить на свои &darr;&darr;&darr;
-    </div>
 
     <div class="card shadow-sm mt-4">
         <div class="card-header bg-success text-white">
@@ -28,7 +28,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/bitrix/admin/fileman_file_edit.php?path=%2Flocal%2Flogs%2Flog_custom.log&full_src=Y&site=s1&lang=ru" target="_blank"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     local/logs/log_custom.log
@@ -39,7 +39,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/otus/homeworks/homework2/writelog.php" target="_blank"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     writelog.php
@@ -50,7 +50,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/otus/homeworks/homework2/clearlog.php" target="_blank"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     clearlog.php
@@ -61,7 +61,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/bitrix/admin/fileman_file_edit.php?path=%2Flocal%2Fphp_interface%2Fsrc%2FApp%2FDebug%2FLogger.php&full_src=Y&site=s1&lang=ru" target="_blank"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     Файл с классом кастомного логгера
@@ -81,7 +81,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
         </div>
         <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/bitrix/admin/fileman_file_edit.php?path=%2Flocal%2Flogs%2Fexceptions.log&full_src=Y&site=s1&lang=ru" target="_blank"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     local/logs/exceptions.log
@@ -92,7 +92,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/otus/homeworks/homework2/writeexception.php" target="_blank"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     writeexception.php
@@ -103,7 +103,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/otus/homeworks/homework2/clearexception.php" target="_blank"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     clearexception.php
@@ -114,7 +114,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </a>
             </li>
             <li class="list-group-item list-group-item-action">
-                <a href="/bitrix/admin/fileman_file_view.php?path=/local/App/Debug/Log.php"
+                <a href="/bitrix/admin/fileman_file_edit.php?path=%2Flocal%2Fphp_interface%2Fsrc%2FApp%2FDebug%2FLogger.php&full_src=Y&site=s1&lang=ru" target="_blank"
                    class="d-flex justify-content-between align-items-center">
                 <span>
                     Файл с классом системного исключений
