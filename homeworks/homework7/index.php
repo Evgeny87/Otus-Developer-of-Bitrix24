@@ -81,6 +81,13 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
             </a>
         </li>
         <li class="list-group-item list-group-item-action">
+            <a href="/bitrix/admin/fileman_file_view.php?path=/local/modules/otus.booking/ajax/get_procedures.php" 
+               class="d-flex justify-content-between align-items-center text-decoration-none" target="_blank">
+                <span><strong>get_procedures.php</strong> — Асинхронный обработчик списка услуг (Автоматический поиск и выгрузка привязанных к врачу процедур для селекта и грида)</span>
+                <span class="badge bg-secondary">Файл в админке</span>
+            </a>
+        </li>
+        <li class="list-group-item list-group-item-action">
             <a href="/bitrix/admin/fileman_file_view.php?path=/local/modules/otus.booking/lang/ru/install/index.php" 
                class="d-flex justify-content-between align-items-center text-decoration-none" target="_blank">
                 <span><strong>index.php (lang)</strong> — Языковой файл модуля (Локализованные фразы ошибок и подписей формы)</span>
