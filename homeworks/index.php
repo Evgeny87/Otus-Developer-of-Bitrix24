@@ -100,7 +100,7 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
                 </h2>
             </li>
             <li>
-                <h2 class="item fire"><a href="homework11/">ДЗ #11: Локальное REST приложение дата последней коммуникации</a>
+                <h2 class="item clock"><a href="homework11/">ДЗ #11: Локальное REST приложение дата последней коммуникации</a>
                     <i class="icon"></i>
                 </h2>
             </li>
