@@ -50,32 +50,32 @@ Asset::getInstance()->addCss('//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bo
 
             <!-- Вебхук: Добавление -->
             <li class="list-group-item list-group-item-action">
-                <a href="/devops/edit/in-hook/8/" target="_blank" class="d-flex justify-content-between align-items-center">
-                    <span>Входящий вебхук: Добавление элемента (ID 8 -> otus.entity.add)</span>
+                <a href="/devops/edit/in-hook/13/" target="_blank" class="d-flex justify-content-between align-items-center">
+                    <span>Входящий вебхук: Добавление элемента (ID 13 -> otus.entity.add)</span>
                     <span class="badge bg-warning text-dark">Ссылка на просмотр</span>
                 </a>
             </li>
 
             <!-- Вебхук: Чтение -->
             <li class="list-group-item list-group-item-action">
-                <a href="/devops/edit/in-hook/9/" target="_blank" class="d-flex justify-content-between align-items-center">
-                    <span>Входящий вебхук: Чтение элемента (ID 9 -> otus.entity.get)</span>
+                <a href="/devops/edit/in-hook/15/" target="_blank" class="d-flex justify-content-between align-items-center">
+                    <span>Входящий вебхук: Чтение элемента (ID 15 -> otus.entity.get)</span>
                     <span class="badge bg-warning text-dark">Ссылка на просмотр</span>
                 </a>
             </li>
 
             <!-- Вебхук: Обновление -->
             <li class="list-group-item list-group-item-action">
-                <a href="/devops/edit/in-hook/10/" target="_blank" class="d-flex justify-content-between align-items-center">
-                    <span>Входящий вебхук: Обновление элемента (ID 10 -> otus.entity.update)</span>
+                <a href="/devops/edit/in-hook/17/" target="_blank" class="d-flex justify-content-between align-items-center">
+                    <span>Входящий вебхук: Обновление элемента (ID 17 -> otus.entity.update)</span>
                     <span class="badge bg-warning text-dark">Ссылка на просмотр</span>
                 </a>
             </li>
 
             <!-- Вебхук: Удаление -->
             <li class="list-group-item list-group-item-action">
-                <a href="/devops/edit/in-hook/11/" target="_blank" class="d-flex justify-content-between align-items-center">
-                    <span>Входящий вебхук: Удаление элемента (ID 11 -> otus.entity.delete)</span>
+                <a href="/devops/edit/in-hook/18/" target="_blank" class="d-flex justify-content-between align-items-center">
+                    <span>Входящий вебхук: Удаление элемента (ID 18 -> otus.entity.delete)</span>
                     <span class="badge bg-warning text-dark">Ссылка на просмотр</span>
                 </a>
             </li>
